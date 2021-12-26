@@ -5,7 +5,7 @@ body  {
 
 #top-container {
   height: 500px;
-  width: auto;
+  width: 100%;
   background-color: #96C7C1;
 }
 
@@ -99,8 +99,8 @@ hr {
 }
 
 .skills-project-boxes {
-  width: 330px;
-  height: 330px;
+  width: auto;
+  height: auto;
   background-color: #89B5AF;
   margin-left: 5%;
 }
@@ -146,6 +146,7 @@ p {
 }
 
 #link {
-  margin: 10%;
+  padding: auto;
   font-size: 20px;
 }
+
