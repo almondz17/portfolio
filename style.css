@@ -1,0 +1,151 @@
+body  {
+  background-color: #D0CAB2;
+  margin: 0;
+}
+
+#top-container {
+  height: 500px;
+  width: auto;
+  background-color: #96C7C1;
+}
+
+h1 {
+  margin: 0;
+}
+
+#name {
+  text-align: center;
+  margin: auto;
+  padding-top: 10%;
+}
+
+#profession {
+  text-align: center;
+  margin: auto;
+  padding-top: 2%;
+}
+
+img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+h2 {
+  color: #89B5AF;
+  font-size: 30px;
+}
+
+.description {
+  margin: 0;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+#skill-image {
+  float: right;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+#about-image {
+  float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.description {
+  font-size: 25px;
+  line-height: 2;
+  padding-bottom: 5%;
+}
+
+#about-me {
+  margin: 5% 25% auto 25%;
+}
+
+#skills {
+  margin: 5% 25% auto 25%;
+}
+
+hr {
+  border: none;
+  border-top: 3px dotted #333;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+  width: 30%;
+}
+
+.skills-display-title {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.skills-project-sub-frame {
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+.skills-project-row {
+  display: flex;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+
+.skills-project-boxes {
+  width: 330px;
+  height: 330px;
+  background-color: #89B5AF;
+  margin-left: 5%;
+}
+
+.skill-headings {
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  margin: auto;
+  color: sandybrown;
+  font-size: 50px;
+}
+
+a:link{
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #D0CAB2;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #D0CAB2;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+p {
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+}
+
+#link {
+  margin: 10%;
+  font-size: 20px;
+}
