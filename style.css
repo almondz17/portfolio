@@ -40,11 +40,12 @@ h2 {
   margin: 0;
   font-size: 30px;
   padding-top: 10px;
+  text-align: justify;
 }
 
 #skill-image {
   float: right;
-  margin-right: 30px;
+  padding: 30px;
   border-radius: 50%;
 }
 
