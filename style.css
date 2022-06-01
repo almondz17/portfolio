@@ -51,6 +51,13 @@ header {
   padding: 0 1.5rem;
 }
 
+.sections {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
 nav {
   width: 100%;
   display: flex;
@@ -77,7 +84,7 @@ nav {
 .nav-list{
   width: 25rem;
   height: 100vh;
-  background-color: #d7d4ed;
+  background-color: black;
   position: fixed;
   top: 0;
   right: -26rem;
@@ -106,7 +113,7 @@ nav {
 .nav-link {
   font-size: 1.6rem;
   text-transform: uppercase;
-  color: rgba(0,0,0,.7)
+  color: white;
 }
 
 /*hero*/
@@ -114,9 +121,10 @@ nav {
 .hero {
   width: 100%;
   height: 80vh;
-  background: linear-gradient(135deg, rgb(223, 136, 243,0.9) 0%, 
-  rgba(72,59,149,0.8) 100%), url(albedo\ favicon.png) center no-repeat;
-  background-size: cover;
+  background: linear-gradient(135deg, rgb(166, 168, 171, 0.9) 0%, 
+  rgba(45, 44, 46, 0.8) 100%), url(albedo favicon.png) center no-repeat;
+  background-size: contain;
+  background-position-y: top; 
   position: relative;
 }
 
@@ -127,7 +135,7 @@ nav {
   bottom: -3px;
   width: 100%;
   height: 4.7rem;
-  background: url(wave-small.png) center no-repeat;
+  background: url(wave-small.png) right no-repeat;
   background-size: cover;
 }
 
@@ -164,37 +172,101 @@ nav {
   transition: background-color 650ms;
 }
 
-.btn.hover{
+.btn:hover{
   background-color: #ce587b;
 }
 
-icon ion-logo{
+.icon ion-logo{
   size: 32px;
+}
+
+.iconify {
+  color: white;
+  width: 6rem;
 }
 
 /*About Me*/
 
-.experience-outdoors{
+.main-location{
   padding: 0;
 }
 
-.title-heading{
+.socials-padding {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.title-heading, .project-heading {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 10rem;
-  color: rgba(0,0,0,.7);
+  color: white;
 }
 
 
-.title-heading h1{
+.title-heading, .project-heading h1{
   font-family: 'Aldrich', sans-serif;
   font-size: 4rem;
   margin: 1rem 0 1rem;
 }
 
-.title-heading p{
+.title-heading, .project-heading p{
   text-transform: capitalize;
   font-size: 2rem;
+}
+
+.project-heading {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 0;
+}
+
+.howto-heading {
+  margin: 1rem 0 1rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Aldrich', sans-serif;
+  font-size: 3rem;
+}
+
+h2 {
+  margin: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: 'Aldrich', sans-serif;
+  font-size: 3rem;
+}
+
+.frames::before {
+  display: inline-flex;
+  max-width: 50%;
+}
+
+.frames::after {
+  max-width: 50%;
+  width: 100%;
+}
+
+.howtoframes::before {
+  max-width: min-content;
+  width: fit-content;
+}
+
+.howtoframes {
+  max-width: 100%;
+  width: 100%;
+}
+
+.htd {
+  font-size: 2rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 0;
 }
 
 .activities-grid{
@@ -211,7 +283,7 @@ icon ion-logo{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 1;
+  z-index: -1;
 }
 
 .activities-grid-item::before{
@@ -219,23 +291,23 @@ icon ion-logo{
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(135deg, rgba(223, 136, 243, 0.9) 0%, 
-  rgba(72,59,149,0.8) 100%);
+  background: linear-gradient(135deg, rgb(166, 168, 171, 0.9) 0%, 
+  rgba(171, 171, 173, 0.8) 100%);
   width: 100%;
   height: 100%;
   z-index: -1;
 }
 
 .about-me {
-  background: url(google.jpg) center no-repeat;
+ background: url(../IMAGES/black2.webp) center no-repeat;
 }
 
 .skills {
-  background: url(google.jpg) center no-repeat;
+  background: url(../IMAGES/black2.webp) center no-repeat;
 }
 
 .contact-image {
-  background: url(google.jpg) center no-repeat;
+  background: url(../IMAGES/black2.webp) center no-repeat;
 }
 
 .activities-grid-item i {
@@ -248,6 +320,11 @@ icon ion-logo{
   font-size: 1.7rem;
   text-transform: uppercase;
   margin: 2rem 0;
+}
+
+.app {
+  padding: 0;
+  padding-right: 5px;
 }
 
 /* Contact Form*/
@@ -279,8 +356,8 @@ icon ion-logo{
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(135deg, rgba(223, 136, 243, 0.9) 0%, 
-  rgba(72,59,149,0.8) 100%);
+  background: linear-gradient(135deg, rgb(166, 168, 171,0.9) 0%, 
+  rgba(42, 42, 43, 0.8) 100%);
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -290,9 +367,9 @@ icon ion-logo{
 footer{
   padding: 2.5rem 0;
   margin-top: 5rem;
-  background-color: #d7d4ed;
+  background-color: black;
   text-align: center;
-  color: rgba(0,0,0,.7)
+  color: white;
 }
 
 
@@ -303,14 +380,16 @@ footer{
   padding: 25px 40px 10px 40px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
+
 .container .text{
   text-align: center;
   font-size: 35px;
   font-weight: 600;
-  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  background: -webkit-linear-gradient(right, #cdcfd1, #3d3e40, #cdcfd1, #3d3e40);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .container form{
   padding: 30px 0 0 0;
 }
@@ -390,7 +469,7 @@ form .form-row .textarea{
   width: 300%;
   position: absolute;
   left: -100%;
-  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  background: -webkit-linear-gradient(right, #cdcfd1, #3d3e40, #cdcfd1, #3d3e40);
   transition: all 0.4s;
 }
 .submit-btn .input-data:hover .inner{
@@ -408,6 +487,7 @@ form .form-row .textarea{
   position: relative;
   z-index: 2;
 }
+
 @media (max-width: 700px) {
   .container .text{
     font-size: 30px;
@@ -432,6 +512,16 @@ form .form-row .textarea{
 @media screen and (min-width: 350px) {
   .main-message{
     transform: translateY(40%);
+  }
+
+  .howtoframes {
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+  }
+
+  h2 {
+    text-align: center;
   }
 }
 
@@ -517,11 +607,15 @@ form .form-row .textarea{
     height: 22.7rem;
     background: url(wave-large.png);
     background-size: cover;
-  } 
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .hero{
     height: 100vh;
+  }
+
+  .htd {
+    max-width: 50%;
   }
 }
